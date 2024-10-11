@@ -8,7 +8,7 @@ from google.oauth2 import service_account
 
 
 # Load Google Gemini API Key
-gemini_ai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+gemini_ai.configure(api_key="AIzaSyBGWgT4FJUidhvLMBbbPNNhr3cGjNd2OKE")
 
 # Function to get a response from Google Gemini
 def get_gemini_repsonse(input):
