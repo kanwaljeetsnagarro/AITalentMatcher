@@ -1,5 +1,5 @@
 pdfplumber
-sentence-transformers
+sentence_transformers
 streamlit
 google-generativeai
 google-generativeai
