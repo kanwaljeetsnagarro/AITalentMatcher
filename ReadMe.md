@@ -43,6 +43,7 @@ This project is a Streamlit web application for automated resume processing usin
 
 - **app.py**: Main application code.
 - **requirements.txt**: Python dependencies required for the project.
+- **pre-requirements.txt**: Python dependencies required for the project when hosting on Streamlit Cloud Spaces
 - **README.md**: Project documentation.
 
 
