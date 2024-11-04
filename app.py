@@ -11,7 +11,7 @@ from google.oauth2 import service_account
 gemini_ai.configure(api_key="AIzaSyBGWgT4FJUidhvLMBbbPNNhr3cGjNd2OKE")
 
 # Function to get a response from Google Gemini
-def get_gemini_repsonse(input):
+def get_gemini_response(input):
     model = gemini_ai.GenerativeModel(model_name="gemini-1.5-flash")
     response = model.generate_content(input)
     return response.text
@@ -72,19 +72,7 @@ if choice == "Resume Filter":
         else:
             st.write("Missing job description or resume")
 
-# Resume analysis code
-# import streamlit as st
-# import pdfplumber
-# import google.generativeai as gemini_ai
-
-# # Configure Google Gemini API Key
-# gemini_ai.configure(api_key='YOUR_GOOGLE_API_KEY')
-
-# # Title and sidebar
-# st.title("Resume Filtering and Analysis")
-# menu = ["Resume Filter", "Resume Analysis"]
-# choice = st.sidebar.selectbox("Select Activity", menu)
-
+# Resume analysis
 if choice == "Resume Analysis":
     st.subheader("Upload Resume for Analysis")
 
@@ -110,7 +98,7 @@ if choice == "Resume Analysis":
             "in one single sentence for the following resume:\n"
             f"{resume_text}"
             )
-            response = get_gemini_repsonse(prompt)       
+            response = get_gemini_response(prompt)       
             return response
 
     # Extract key information using Google Gemini
@@ -122,7 +110,7 @@ if choice == "Resume Analysis":
             "3. Education\n"
             f"Resume: {resume_text}"
         )
-        response = get_gemini_repsonse(prompt)
+        response = get_gemini_response(prompt)
         return response
 
     # Chat with the resume
@@ -131,7 +119,7 @@ if choice == "Resume Analysis":
             f"Here is a resume:\n{resume_text}\n"
             f"Answer the following question about the resume: {user_question}"
         )
-        response = get_gemini_repsonse(prompt)
+        response = get_gemini_response(prompt)
         return response
 
     submit1 = st.button("Analyze Resume")
@@ -180,7 +168,7 @@ if choice == "Resume Chat":
             "in one single sentence for the following resume:\n"
             f"{resume_text}"
             )
-        response = get_gemini_repsonse(prompt)       
+        response = get_gemini_response(prompt)       
         return response
 
     # Extract key information using Google Gemini
@@ -192,7 +180,7 @@ if choice == "Resume Chat":
             "3. Education\n"
             f"Resume: {resume_text}"
         )
-        response = get_gemini_repsonse(prompt)
+        response = get_gemini_response(prompt)
         return response
 
     # Chat with the resume
@@ -201,7 +189,7 @@ if choice == "Resume Chat":
             f"Here is a resume:\n{resume_text}\n"
             f"Answer the following question about the resume: {user_question}"
         )
-        response = get_gemini_repsonse(prompt)
+        response = get_gemini_response(prompt)
         return response
 
     # Chat with the resume
