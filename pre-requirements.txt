@@ -1,5 +1,1 @@
 pdfplumber
-streamlit
-google-generativeai
-google-generativeai
-pdf2image
