@@ -1,7 +1,6 @@
 import streamlit as st
 import pdfplumber
 from sentence_transformers import SentenceTransformer, util
-import pdfplumber
 import os
 import google.generativeai as gemini_ai
 from google.oauth2 import service_account
