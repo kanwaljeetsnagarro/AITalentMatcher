@@ -26,26 +26,29 @@ This project is a Streamlit web application for automated resume processing usin
 3. Configure Google Gemini API:
    Set up a Google Gemini API key and store it in an environment variable GOOGLE_API_KEY
 
-Usage
+ ## Usage
+ 
 1. Run the Streamlit application:
 
-bash
-streamlit run app.py
+   ```bash
+   streamlit run app.py
 
 2. Select Activity: Choose from "Resume Filter," "Resume Analysis," or "Resume Chat" on the sidebar.
 
-  a. Resume Filter: Upload resumes and provide a job description to see top matching resumes based on similarity scores.
-  b. Resume Analysis: Upload a resume to get a summary and key information such as skills, experience, and education.
-  c. Resume Chat: Upload a resume and ask questions to receive AI-generated answers based on the resume content.
+- **Resume Filter**: Upload resumes and provide a job description to see top matching resumes based on similarity scores.
+- **Resume Analysis**: Upload a resume to get a summary and key information such as skills, experience, and education.
+- **Resume Chat**: Upload a resume and ask questions to receive AI-generated answers based on the resume content.
 
-Project Structure
-  a. app.py: Main application code.
-  b. requirements.txt: Python dependencies required for the project.
-  c. README.md: Project documentation.
+## Project Structure
+
+- **app.py**: Main application code.
+- **requirements.txt**: Python dependencies required for the project.
+- **README.md**: Project documentation.
 
 
-Acknowledgments
-  a. Streamlit for the web framework.
-  b. pdfplumber for PDF text extraction.
-  c. Sentence Transformers for NLP models.
-  d. Google Gemini for generative content support.
+## Acknowledgments
+
+- **Streamlit** for the web framework.
+- **pdfplumber** for PDF text extraction.
+- **Sentence Transformers** for NLP models.
+- **Google Gemini** for generative content support.
