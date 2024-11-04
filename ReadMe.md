@@ -18,7 +18,7 @@ This project is a Streamlit web application for automated resume processing usin
 1. Clone the repository:
    ```bash
    git clone https://github.com/kanwaljeetsnagarro/AITalentMatcher.git
-   cd AI-Resume-Matching
+   cd AITalentMatcher
 
 2. Install the required packages:
    pip install -r requirements.txt
