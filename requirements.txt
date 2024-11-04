@@ -1,6 +1,5 @@
 pdfplumber
 streamlit
 google-generativeai
-google-generativeai
 pdf2image
 sentence_transformers
